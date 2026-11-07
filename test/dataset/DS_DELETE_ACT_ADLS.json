@@ -1,0 +1,19 @@
+{
+	"name": "DS_DELETE_ACT_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DELETE_ACT_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customers-100000.csv",
+				"fileSystem": "inputdata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

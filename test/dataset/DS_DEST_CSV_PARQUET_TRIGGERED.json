@@ -1,0 +1,20 @@
+{
+	"name": "DS_DEST_CSV_PARQUET_TRIGGERED",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DEST_CSV_PARQUET_TRIGGERED",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "destoutputcontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

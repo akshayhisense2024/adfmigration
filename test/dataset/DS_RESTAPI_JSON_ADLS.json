@@ -1,0 +1,19 @@
+{
+	"name": "DS_RESTAPI_JSON_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_RESTAPI_JSON_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "outputdata"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

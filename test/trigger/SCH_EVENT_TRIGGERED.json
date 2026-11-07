@@ -1,0 +1,24 @@
+{
+	"name": "SCH_EVENT_TRIGGERED",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_MANUAL_EVENT_TRIGGERED",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventinputcontainer/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c8ea912d-5dbe-4029-9811-0d8923763e5c/resourceGroups/rgdevsuzukiproject/providers/Microsoft.Storage/storageAccounts/adfdevsuzukisrctrigger",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

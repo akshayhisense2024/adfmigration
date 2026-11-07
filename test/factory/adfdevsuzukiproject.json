@@ -1,0 +1,15 @@
+{
+	"name": "adfdevsuzukiproject",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d36df6ca-7534-4ff2-ac73-8916be5aedaa",
+		"tenantId": "cd557a9c-d3ad-42e5-b44f-245b8160a926"
+	}
+}

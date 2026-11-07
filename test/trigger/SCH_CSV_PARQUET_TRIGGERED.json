@@ -1,0 +1,24 @@
+{
+	"name": "SCH_CSV_PARQUET_TRIGGERED",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SRC_CSV_TRIGGERED",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 15,
+				"startTime": "2026-11-07T14:20:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
