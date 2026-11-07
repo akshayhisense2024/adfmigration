@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevsuzukiproject"
+		},
+		"DS_STORED_PROCEDURE_ACT_password": {
+			"value": ""
+		},
+		"LS_DELETE_ACT_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_DEST_CSV_PARQUET_TRIGGERED_accountKey": {
+			"value": ""
+		},
+		"LS_GET_METADATA1_accountKey": {
+			"value": ""
+		},
+		"LS_LOGGING_ACTIVITY_accountKey": {
+			"value": ""
+		},
+		"LS_MANUAL_CSV_EVENT_TRIGGERED_accountKey": {
+			"value": ""
+		},
+		"LS_MANUAL_EVENT_TRIGGERED_accountKey": {
+			"value": ""
+		},
+		"LS_RESTAPI_JSON_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SQLSERVER_ADLS_PARQUET_password": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_ADLS1_password": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_2_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SRC_CSV_TRIGGERED_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"DS_STORED_PROCEDURE_ACT_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"DS_STORED_PROCEDURE_ACT_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"DS_STORED_PROCEDURE_ACT_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"LS_DELETE_ACT_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_DEST_CSV_PARQUET_TRIGGERED_properties_typeProperties_url": {
+			"value": "https://adfdevsuzukidesttrigger.dfs.core.windows.net/"
+		},
+		"LS_GET_METADATA1_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_LOGGING_ACTIVITY_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_CSV_EVENT_TRIGGERED_properties_typeProperties_url": {
+			"value": "https://adfdevsuzukidesttrigger.dfs.core.windows.net/"
+		},
+		"LS_MANUAL_EVENT_TRIGGERED_properties_typeProperties_url": {
+			"value": "https://adfdevsuzukisrctrigger.dfs.core.windows.net/"
+		},
+		"LS_RESTAPI_ADLS_JSON_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_RESTAPI_JSON_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQLSERVER_ADLS_PARQUET_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_ADLS_PARQUET_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"LS_SQLSERVER_ADLS_PARQUET_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"LS_SQL_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS1_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_SQL_ADLS1_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"LS_SQL_ADLS1_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"LS_SQL_ADLS_2_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SRC_CSV_TRIGGERED_properties_typeProperties_url": {
+			"value": "https://adfdevsuzukisrctrigger.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"SCH_EVENT_TRIGGERED_properties_typeProperties_scope": {
+			"value": "/subscriptions/c8ea912d-5dbe-4029-9811-0d8923763e5c/resourceGroups/rgdevsuzukiproject/providers/Microsoft.Storage/storageAccounts/adfdevsuzukisrctrigger"
+		}
+	}
+}
