@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdevsuzukiproject"
 		},
+		"DS_LOOKUP_WATERMARK_TBL_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'DS_LOOKUP_WATERMARK_TBL'"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'DS_SQL_SP_PROC_ON_PREM'"
+		},
 		"DS_STORED_PROCEDURE_ACT_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'DS_STORED_PROCEDURE_ACT'"
@@ -26,6 +34,18 @@
 		"LS_LOGGING_ACTIVITY_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_LOGGING_ACTIVITY'"
+		},
+		"LS_LOOKUP_MAX_VALUE_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LOOKUP_MAX_VALUE'"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LOOKUP_SQLTABLE_WATERMARK'"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LOOKUP_SQL_TBL_ALL_LOAD'"
 		},
 		"LS_MANUAL_CSV_EVENT_TRIGGERED_accountKey": {
 			"type": "secureString",
@@ -63,6 +83,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SQL_ADLS_PARQUET'"
 		},
+		"LS_SQL_PARQUET_MIGRATION_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET_MIGRATION'"
+		},
 		"LS_SRC_CSV_TRIGGERED_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SRC_CSV_TRIGGERED'"
@@ -70,6 +94,30 @@
 		"SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer1'"
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "AKSHAY\\SQLEXPRESS"
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "akshaysqlserver"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "AKSHAY\\SQLEXPRESS"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "akshaysqlserver"
 		},
 		"DS_STORED_PROCEDURE_ACT_properties_typeProperties_server": {
 			"type": "string",
@@ -98,6 +146,42 @@
 		"LS_LOGGING_ACTIVITY_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "akshaysqlserver"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "akshaysqlserver"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "akshaysqlserver"
 		},
 		"LS_MANUAL_CSV_EVENT_TRIGGERED_properties_typeProperties_url": {
 			"type": "string",
@@ -154,6 +238,10 @@
 		"LS_SQL_ADLS_PARQUET_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQL_PARQUET_MIGRATION_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssqlparquetmigration.dfs.core.windows.net/"
 		},
 		"LS_SRC_CSV_TRIGGERED_properties_typeProperties_url": {
 			"type": "string",
@@ -235,6 +323,9 @@
 					"LS_SQL_ADLS_PARQUET_accountKey": {
 						"value": "[parameters('LS_SQL_ADLS_PARQUET_accountKey')]"
 					},
+					"LS_SQL_PARQUET_MIGRATION_accountKey": {
+						"value": "[parameters('LS_SQL_PARQUET_MIGRATION_accountKey')]"
+					},
 					"LS_SRC_CSV_TRIGGERED_accountKey": {
 						"value": "[parameters('LS_SRC_CSV_TRIGGERED_accountKey')]"
 					},
@@ -274,6 +365,9 @@
 					"LS_SQL_ADLS_PARQUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_SQL_ADLS_PARQUET_properties_typeProperties_url')]"
 					},
+					"LS_SQL_PARQUET_MIGRATION_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_PARQUET_MIGRATION_properties_typeProperties_url')]"
+					},
 					"LS_SRC_CSV_TRIGGERED_properties_typeProperties_url": {
 						"value": "[parameters('LS_SRC_CSV_TRIGGERED_properties_typeProperties_url')]"
 					}
@@ -295,8 +389,23 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"DS_LOOKUP_WATERMARK_TBL_password": {
+						"value": "[parameters('DS_LOOKUP_WATERMARK_TBL_password')]"
+					},
+					"DS_SQL_SP_PROC_ON_PREM_password": {
+						"value": "[parameters('DS_SQL_SP_PROC_ON_PREM_password')]"
+					},
 					"DS_STORED_PROCEDURE_ACT_password": {
 						"value": "[parameters('DS_STORED_PROCEDURE_ACT_password')]"
+					},
+					"LS_LOOKUP_MAX_VALUE_password": {
+						"value": "[parameters('LS_LOOKUP_MAX_VALUE_password')]"
+					},
+					"LS_LOOKUP_SQLTABLE_WATERMARK_password": {
+						"value": "[parameters('LS_LOOKUP_SQLTABLE_WATERMARK_password')]"
+					},
+					"LS_LOOKUP_SQL_TBL_ALL_LOAD_password": {
+						"value": "[parameters('LS_LOOKUP_SQL_TBL_ALL_LOAD_password')]"
 					},
 					"LS_SQLSERVER_ADLS_PARQUET_password": {
 						"value": "[parameters('LS_SQLSERVER_ADLS_PARQUET_password')]"
@@ -307,6 +416,24 @@
 					"SqlServer1_password": {
 						"value": "[parameters('SqlServer1_password')]"
 					},
+					"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_server": {
+						"value": "[parameters('DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_server')]"
+					},
+					"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_database": {
+						"value": "[parameters('DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_database')]"
+					},
+					"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_userName": {
+						"value": "[parameters('DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_userName')]"
+					},
+					"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_server": {
+						"value": "[parameters('DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_server')]"
+					},
+					"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_database": {
+						"value": "[parameters('DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_database')]"
+					},
+					"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_userName": {
+						"value": "[parameters('DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_userName')]"
+					},
 					"DS_STORED_PROCEDURE_ACT_properties_typeProperties_server": {
 						"value": "[parameters('DS_STORED_PROCEDURE_ACT_properties_typeProperties_server')]"
 					},
@@ -315,6 +442,33 @@
 					},
 					"DS_STORED_PROCEDURE_ACT_properties_typeProperties_userName": {
 						"value": "[parameters('DS_STORED_PROCEDURE_ACT_properties_typeProperties_userName')]"
+					},
+					"LS_LOOKUP_MAX_VALUE_properties_typeProperties_server": {
+						"value": "[parameters('LS_LOOKUP_MAX_VALUE_properties_typeProperties_server')]"
+					},
+					"LS_LOOKUP_MAX_VALUE_properties_typeProperties_database": {
+						"value": "[parameters('LS_LOOKUP_MAX_VALUE_properties_typeProperties_database')]"
+					},
+					"LS_LOOKUP_MAX_VALUE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LOOKUP_MAX_VALUE_properties_typeProperties_userName')]"
+					},
+					"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_server": {
+						"value": "[parameters('LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_server')]"
+					},
+					"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_database": {
+						"value": "[parameters('LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_database')]"
+					},
+					"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_userName')]"
+					},
+					"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_server": {
+						"value": "[parameters('LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_server')]"
+					},
+					"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_database": {
+						"value": "[parameters('LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_database')]"
+					},
+					"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_userName')]"
 					},
 					"LS_SQLSERVER_ADLS_PARQUET_properties_typeProperties_server": {
 						"value": "[parameters('LS_SQLSERVER_ADLS_PARQUET_properties_typeProperties_server')]"

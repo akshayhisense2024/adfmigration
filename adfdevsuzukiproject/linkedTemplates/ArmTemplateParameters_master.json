@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "adfdevsuzukiproject"
 		},
+		"DS_LOOKUP_WATERMARK_TBL_password": {
+			"value": ""
+		},
+		"DS_SQL_SP_PROC_ON_PREM_password": {
+			"value": ""
+		},
 		"DS_STORED_PROCEDURE_ACT_password": {
 			"value": ""
 		},
@@ -18,6 +24,15 @@
 			"value": ""
 		},
 		"LS_LOGGING_ACTIVITY_accountKey": {
+			"value": ""
+		},
+		"LS_LOOKUP_MAX_VALUE_password": {
+			"value": ""
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_password": {
+			"value": ""
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_password": {
 			"value": ""
 		},
 		"LS_MANUAL_CSV_EVENT_TRIGGERED_accountKey": {
@@ -47,11 +62,32 @@
 		"LS_SQL_ADLS_PARQUET_accountKey": {
 			"value": ""
 		},
+		"LS_SQL_PARQUET_MIGRATION_accountKey": {
+			"value": ""
+		},
 		"LS_SRC_CSV_TRIGGERED_accountKey": {
 			"value": ""
 		},
 		"SqlServer1_password": {
 			"value": ""
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"DS_LOOKUP_WATERMARK_TBL_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"DS_SQL_SP_PROC_ON_PREM_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
 		},
 		"DS_STORED_PROCEDURE_ACT_properties_typeProperties_server": {
 			"value": "AKSHAY\\SQLEXPRESS"
@@ -73,6 +109,33 @@
 		},
 		"LS_LOGGING_ACTIVITY_properties_typeProperties_url": {
 			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LOOKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LOOKUP_SQLTABLE_WATERMARK_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_server": {
+			"value": "AKSHAY\\SQLEXPRESS"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LOOKUP_SQL_TBL_ALL_LOAD_properties_typeProperties_userName": {
+			"value": "akshaysqlserver"
 		},
 		"LS_MANUAL_CSV_EVENT_TRIGGERED_properties_typeProperties_url": {
 			"value": "https://adfdevsuzukidesttrigger.dfs.core.windows.net/"
@@ -115,6 +178,9 @@
 		},
 		"LS_SQL_ADLS_PARQUET_properties_typeProperties_url": {
 			"value": "https://adlsdevsuzukiproject.dfs.core.windows.net/"
+		},
+		"LS_SQL_PARQUET_MIGRATION_properties_typeProperties_url": {
+			"value": "https://adlssqlparquetmigration.dfs.core.windows.net/"
 		},
 		"LS_SRC_CSV_TRIGGERED_properties_typeProperties_url": {
 			"value": "https://adfdevsuzukisrctrigger.dfs.core.windows.net/"
