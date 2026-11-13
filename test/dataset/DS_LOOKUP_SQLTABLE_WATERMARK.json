@@ -1,0 +1,12 @@
+{
+	"name": "DS_LOOKUP_SQLTABLE_WATERMARK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LOOKUP_SQLTABLE_WATERMARK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
